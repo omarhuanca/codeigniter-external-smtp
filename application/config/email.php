@@ -12,6 +12,11 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 */
 $config['protocol']	= 'smtp';
 $config['smtp_port']	= '587';
+
+$config["smtp_crypto"]  = "tls";
 $config['smtp_host']	= getenv('SMTP_HOST');
 $config['smtp_user']	= getenv('SMTP_USER');
 $config['smtp_pass']	= getenv('SMTP_PASS');
+$config['mailtype']     = 'html';
+$config['charset']      = 'iso-8859-1';
+$config['wordwrap']     = TRUE;
